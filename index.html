@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Motorbike</title>
+</head>
+<body>
+    <div class="header">
+
+        <div class="header-logo">
+            <i class="fa-solid fa-motorcycle"></i>
+            Tiêu Mận
+        </div>
+
+        <div class="header-menu">
+            <ul>
+                <li><a href="#">trang chủ</a></li>
+                <li>
+                  <a href="#">sản phẩm</a>
+
+                  <ul class="menu-child">
+                    <li><a href="">danh sách sản phẩm</a></li>
+                    <li><a href="">phụ tùng</a></li>
+                    <li><a href="">phụ kiện</a></li>
+                    <li><a href="">báo lỗi</a></li>
+                    <li><a href="">cửa hàng ủy quyền</a></li>
+                  </ul>
+
+                </li>
+                <li><a href="#">giới thiệu</a></li>
+                <li><a href="#">tin tức</a></li>
+                <li><a href="#">liên hệ</a></li>
+            </ul>
+        </div>
+
+        <div class="header-button">
+            <a href="./page/logIn.html" class="btn">đăng nhập</a>
+            <a href="./page/registration.html" class="btn">đăng ký</a>
+        </div>
+
+    </div>
+
+
+    <div class="slider swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/image/moto1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image/moto2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image/moto3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image/moto4.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image/moto5.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="content">
+        <h2>sản phẩm mới</h2>
+        <div class="new-product">
+        </div>
+        <h2>sản phẩm nổi bật</h2>
+        <div class="list-product">
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-right">
+            @ 2022 Tiêu mận, tất cả các quyền được bảo lưu
+        </div>
+        <div class="footer-left">
+          quốc gia và khu vực: singapore | indonesia | thailand | vietnam
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script/swiper.js"></script>
+    <script src="./script/index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    outline: none;
+}
+
+:root {
+    --prinary-color: #54bf59;
+    --text-color: #00FF00;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.header-logo {
+    color: var(--text-color);
+    font-size: 3rem;
+    margin-right: 5rem;
+}
+
+.header-menu {
+    flex: 2;
+}
+
+.header-menu>ul {
+    height: 4rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 1px 0 rgba(0, 0, 0, 0.45);
+}
+
+.header-menu>ul>li {
+    width: calc(100% / 5);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-menu>ul>li:first-child {
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.header-menu>ul>li:last-child {
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+.header-menu ul li:hover {
+    /* border-bottom: 1px solid var(--prinary-color); */
+    cursor: pointer;
+    background-color: linear-gradient(to right, purple, pink);
+    background-image: linear-gradient(to bottom, #fff, var(--text-color));
+}
+
+.header-menu ul li:hover .menu-child {
+    display: block;
+}
+
+.menu-child {
+    position: absolute;
+    top: 120%;
+    background: white;
+    width: 200%;
+    z-index: 1000;
+    left: 0;
+    text-align: left;
+    display: none;
+}
+
+.menu-child::before {
+    content: '';
+    height: 1.3rem;
+    width: 100%;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    z-index: 100000;
+}
+
+.menu-child li {
+    padding: 1rem;
+}
+
+.header-button {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-left: 4rem;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid var(--text-color);
+    border-radius: 3rem;
+    width: 12rem;
+    line-height: 4rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: var(--prinary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.slider {
+    max-height: 50rem;
+}
+
+
+/* content */
+
+.content {
+    margin-bottom: 5rem;
+}
+
+.content>h2 {
+    background-color: var(--prinary-color);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding-left: 5rem;
+}
+
+.especially-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.especially-product img {
+    width: 30rem;
+}
+
+.info-product-new {
+    margin-left: 5rem;
+}
+
+.info-product-new h3 {
+    font-size: 4rem;
+    margin-bottom: .5rem;
+}
+.info-product-new .discount {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.info-product-new .discount span {
+    text-decoration: line-through;
+    padding-right: 1.5rem;
+}
+
+.info-product-new .text {
+    font-size: 1.9rem;
+    color: var(--text-color);
+}
+.info-product-new .date-sale {
+    margin-bottom: 2rem;
+}
+
+.list-product {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+
+.item-product {
+    width: 26rem;
+    overflow: hidden;
+    border: .1rem solid var(--text-color);
+}
+
+.item-product .image {
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+}
+
+.item-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-product:hover img {
+    transform: scale(1.1);
+}
+
+
+.info-product {
+    padding: 1rem;
+}
+
+
+.info-product h3 {
+    color: var(--text-color);
+    font-size: 2.2rem;
+}
+
+.item-product .btn {
+    margin: 1rem auto;
+}
+
+
+
+/* footer */
+
+.footer {
+    height: 5rem;
+    background: var(--prinary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer>div {
+    font-size: 1.3rem;
+}
