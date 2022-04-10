@@ -5,6 +5,9 @@ const listProduct = document.querySelector('.list-product')
 const d = new Date()
  
 
+
+
+
 const productLast = products[products.length - 1]
 newProduct.innerHTML = `
     <div class='especially-product' >
@@ -22,7 +25,7 @@ newProduct.innerHTML = `
             ${d.getFullYear()}
              </p>
             
-            <a class='btn'> thêm vào giỏ </a>
+            <a class='btn' onclick="alert('vui lòng đăng nhập')"> thêm vào giỏ </a>
         </div>
     </div>
 `
@@ -37,7 +40,7 @@ newProduct.innerHTML = `
             <h3> ${item.name} </h3>
             <span> ${item.price} VND</span>
         </div>
-        <a class='btn'> thêm vào giỏ </a>
+        <a class='btn' onclick="alert('vui lòng đăng nhập')"> thêm vào giỏ </a>
         
     </div>
     `
