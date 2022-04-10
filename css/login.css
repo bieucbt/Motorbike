@@ -16,24 +16,31 @@
 .content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     background-color: var(--prinary-color);
+    position: relative;
+    height: 40rem;
 }
 
 
 .content-logo {
     font-size: 5rem;
+    margin-left: 10%;
+
 }
 
 .content-logo h2 {
     font-size: 2rem;
+    text-align: left;
+    padding: 20rem;
 }
 
 
 .content-login {
     background-color: #fff;
     padding: 2rem;
-    margin: 5rem 0;
+    position: absolute;
+    right: 10%;
+
 }
 
 .input > span {
