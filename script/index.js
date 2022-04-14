@@ -1,13 +1,15 @@
 import  {products}  from "./Data.js";
 
-const newProduct = document.querySelector('.new-product')
-const listProduct = document.querySelector('.list-product')
+const $ = document.querySelector.bind(document)
+
+const newProduct = $('.new-product')
+const listProduct = $('.list-product')
 const d = new Date()
  
 
 
 
-
+// xử lý sản phẩm mới
 const productLast = products[products.length - 1]
 newProduct.innerHTML = `
     <div class='especially-product' >
@@ -30,6 +32,7 @@ newProduct.innerHTML = `
     </div>
 `
 
+// xử lý danh sách sản phẩm
  const newListProduct = products.map(item => {
     return `
     <div class='item-product' >
@@ -50,3 +53,10 @@ listProduct.innerHTML = newListProduct
 
 
 
+// xử lý menu mobile
+const btnMenuMobile = $('.menu-bar')
+const menuMobile = $('.header-menu')
+
+btnMenuMobile.addEventListener('click', () => {
+    menuMobile.classList.toggle('active')
+})
