@@ -18,6 +18,60 @@
         display: flex;
     }
 
+    /* menu */
+    .menu-bar {
+        display: none;
+    }
+
+
+    /* login */
+    .content-logo {
+        display: none;
+    }
+
+    .content-login {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .header {
+        padding: 0 1rem;
+    }
+
+    .btn {
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 739px) {
+
+    /*  new product */
+
+    .especially-product {
+       flex-direction: column;
+   }
+
+   .header {
+       padding: 0 1rem;
+   }
+
+   .header-logo {
+        font-size: 2rem;
+    }
+
+    .header-button .btn {
+        border-radius: 2.5rem;
+        width: 9rem;
+    }
+
+    .info-product-new {
+        margin-left: 0;
+    }
+
+    /* menu mobile */
     .menu-bar {
         position: absolute;
         top: 108%;
@@ -35,7 +89,7 @@
     .header-menu {
         position: absolute;
         top: 120%;
-        right: 6rem;
+        right: 2rem;
         z-index: 99999;
         display: none;
     }
@@ -59,18 +113,8 @@
 
     .header-menu ul li .menu-child {
         top: 0;
-        left: calc(-100% + -1rem);
+        left: calc(-71% + -1rem);
         width: 100%;
-    }
-
-    .header-menu ul li:first-child {
-        border-top-left-radius: 2rem;
-        border-top-right-radius: 2rem;
-    }
-
-    .header-menu ul li:last-child {
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
     }
 
     .menu-child::before {
@@ -83,25 +127,13 @@
         color: var(--prinary-color);
     }
 
-    /* login */
-    .content-logo {
-        display: none;
+    .new-product {
+        padding: 0 1rem;
     }
 
-    .content-login {
-        right: 50%;
-        transform: translateX(50%);
+    .footer {
+        text-align: center;
     }
-
-}
-
-@media only screen and (max-width: 739px) {
-
-    /*  new product */
-
-    .especially-product {
-       flex-direction: column;
-   }
 
 }
 
@@ -110,6 +142,16 @@
 
     .menu-bar {
         display: none;
+    }
+
+    .menu-child li:first-child {
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }
+    
+    .menu-child li:last-child {
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
     }
 
 }
