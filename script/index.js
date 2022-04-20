@@ -49,7 +49,7 @@ newProduct.innerHTML = `
     `
 })
 
-listProduct.innerHTML = newListProduct
+listProduct.innerHTML = newListProduct.join('')
 
 
 
